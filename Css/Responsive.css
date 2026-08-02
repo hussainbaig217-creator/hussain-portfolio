@@ -297,52 +297,49 @@
         align-items: center;
     }
 
-    /* ==================================
-            JOURNEY
-================================== */
-    .timeline::before {
-        left: 20px;
-        transform: none;
-    }
+/* Responsive.css — JOURNEY (update the 760px block) */
+@media (max-width: 760px) {
+  .timeline::before {
+    left: 16px;
+    transform: none;
+    width: 3px;               /* slightly thinner on mobile */
+  }
 
-    .timeline-item {
-        width: 100%;
-        left: 0 !important;
-        padding: 20px 20px 20px 60px;
-    }
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding: 18px 18px 18px 48px; /* less left padding */
+  }
 
-    .timeline-item.left,
-    .timeline-item.right {
-        text-align: left;
-    }
+  .timeline-item.left,
+  .timeline-item.right {
+    text-align: left;
+  }
 
-    .timeline-item .timeline-dot {
-        left: 10px;
-        right: auto;
-    }
+  .timeline-item .timeline-dot {
+    left: 8px;
+    right: auto;
+  }
 
-    .timeline-card h3 {
-        font-size: 1.3rem;
-    }
+  .timeline-card h3 {
+    font-size: 1.2rem;
+  }
 
-    .timeline-card p {
-        font-size: .95rem;
-    }
+  .timeline-card p {
+    font-size: 0.9rem;
+  }
 
-    .timeline-tags {
-        gap: .5rem;
-    }
+  .timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
 
-    .timeline-tags span {
-        font-size: .75rem;
-        padding: .35rem .7rem;
-    }
-
+  .timeline-tags span {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
 }
-
-
-
-
 
 /* ==================================
              SKILLS
@@ -353,104 +350,155 @@
 /* ==================================
           ARCHITECTURE
 ================================== */
+/* Responsive.css — ARCHITECTURE/SKILLS */
+@media (max-width: 768px) {
+  .Architechure-section {
+    padding: 60px 4% 80px;
+  }
 
+  .stat-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* lower min */
+    padding: 16px;
+    gap: 1rem;
+  }
+
+  .skills-heading,
+  .dream-heading {
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  .dream-products {
+    padding: 16px;
+    gap: 1rem;
+  }
+
+  .card {
+    flex: 0 1 100%;           /* full width on very small screens */
+  }
+}
 
 
 /* ==================================
             PROJECTS
 ================================== */
 
+/* Responsive.css — PROJECTS */
+@media (max-width: 768px) {
+  .project-section {
+    padding: 1.5rem 1rem;
+  }
 
-@media (max-width:768px) {
+  .project-body {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 
-    .project-body {
-        grid-template-columns: 1fr;
-        /* gap: 2rem; */
-    }
+  .project-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .project-top {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .project-top .project-status {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;   /* smaller badges */
+  }
 
-    .project-top .project-status {
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
+  .project-top .project-category {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
 
-    .project-top .project-category {
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
+  .project-date {
+    font-size: 0.85rem;
+  }
 
-    .project-date {
-        font-size: clamp(1rem, 1.1rem, 0.8rem, 0.9rem);
-    }
+  .featured-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
 
-    .featured-tags span {
-        font-size: clamp(1rem, 1.1rem, 0.8rem, 0.9rem);
-    }
+  .featured-tags span {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
 
-    .featured-btn .Github-btn {
-        font-size: clamp(0.8rem, 0.9rem, 0.7rem);
-        padding: 10px 10px;
-    }
+  .featured-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
 
-    .featured-btn .live-btn {
-        font-size: clamp(0.8rem, 0.9rem, 0.7rem);
-        padding: 10px 10px;
-    }
-
+  .featured-btn .Github-btn,
+  .featured-btn .live-btn {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
 }
 
-/* ==================================
-            CONTACT
-================================== */
 
 /* ==================================
         CONTACT SECTION
 ================================== */
-.contact-section {
-    padding: 70px 20px;
-}
+/* Responsive.css — CONTACT */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 16px 60px;
+  }
 
-.contact-heading {
-    margin-bottom: 3rem;
-}
+  .contact-heading {
+    margin-bottom: 2rem;
+  }
 
-.contact-heading h3 {
-    font-size: 2rem;
-}
+  .contact-heading h3 {
+    font-size: 1.75rem;
+  }
 
-.contact-container {
+  .contact-container {
     grid-template-columns: 1fr;
     gap: 2rem;
-}
+  }
 
-.contact-form-wrapper {
-    padding: 1.5rem;
-}
+  .contact-form-wrapper {
+    padding: 1.25rem;          /* smaller on mobile */
+  }
 
-.form-row {
+  .form-row {
     grid-template-columns: 1fr;
-}
+  }
 
-.form-submit {
+  .form-submit {
     width: 100%;
-}
+  }
 
-.social-icon {
+  .social-icon {
     justify-content: center;
-}
+  }
 
-.info-card:hover {
+  .info-card:hover {
     transform: none;
+  }
 }
 
 /* ==================================
             Services
 ================================== */
+/* Responsive.css — SERVICES */
+@media (max-width: 768px) {
+  .service-section {
+    padding: 60px 4% 80px;
+  }
+
+  .service-container {
+    gap: 1.25rem;
+  }
+}
 /* no media querey needed ! because of grid trick  */
 /* ==================================
              FOOTER
