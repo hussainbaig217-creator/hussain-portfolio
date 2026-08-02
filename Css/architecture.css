@@ -165,7 +165,7 @@
 
 .Architechure-bio {
     flex: 1;
-    min-width: 300px;
+    min-width: 0;
 }
 
 .Architechure-bio h2 {
@@ -186,13 +186,13 @@
 
 /* The Terminal Window Ui Box */
 .terminal-window {
-    flex: 1;
-    min-width: 320px;
-    background: #110018;
-    border-radius: 12px;
-    border: 1px solid rgba(203, 180, 212, 0.2);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+  flex: 1;
+max-witdth:0;   /* DELETE THIS LINE */
+  background: #110018;
+  border-radius: 12px;
+  border: 1px solid rgba(203, 180, 212, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .terminal-header {
