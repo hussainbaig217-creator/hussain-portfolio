@@ -251,10 +251,13 @@
 /* ==================================
              HERO
 ================================== */
-/* Responsive.css — HERO */
 @media (max-width: 760px) {
+  .hero-section {
+    padding: 1.5rem 1rem;   /* add this to reduce side padding */
+  }
+
   .hero-container {
-    flex-direction: column;    /* stack image below text */
+    flex-direction: column;   /* stack image under text */
     align-items: center;
     gap: 1.5rem;
   }
@@ -264,21 +267,8 @@
   }
 
   .hero-image img {
-    max-width: 100%;           /* don’t exceed parent */
+    max-width: 100%;
     height: auto;
-    width: 100%;
-  }
-
-  .hero-cta {
-    flex-direction: column;    /* stack buttons if needed */
-    gap: 1rem;
-    width: 100%;
-    align-items: stretch;      /* buttons fill width */
-  }
-
-  .hero-cta .primary-btn,
-  .hero-cta .sub-btn {
-    text-align: center;
     width: 100%;
   }
 }
