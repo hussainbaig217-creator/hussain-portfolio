@@ -143,13 +143,14 @@
     margin: 0 auto;
 }
 
+/* Around line 127 */
 .Architechure-heading {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 800;
+  overflow-wrap: break-word;   /* add this */
 }
-
 .Architechure-heading span {
     color: #cbb4d4;
 }
