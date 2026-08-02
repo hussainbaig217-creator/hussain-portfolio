@@ -8,19 +8,20 @@
     flex-wrap: wrap;
 }
 
+/* AFTER */
 .hero-content {
-    flex: 1;
-    display: flex;
-    flex-basis: 450px;
-    gap: 1rem;
-    flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;          /* allow shrinking */
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .hero-image {
-    flex: 1;
-    flex-basis: 450px;
-    display: flex;
-    justify-content: center;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image img {
