@@ -1,0 +1,530 @@
+.badge-animation {
+    /* animation-delay:2s; */
+    animation: badge-animation 2s ease-in-out forwards;
+}
+
+.up-side-animate {
+    /* animation-delay:4s; */
+    animation: hero-h1 3s ease-in-out forwards;
+
+}
+
+.highlight-animation {
+    /* animation-delay:6s; */
+    animation: hero-light 2s ease-in-out forwards;
+
+}
+
+.hero-description {
+    /* animation-delay:8s; */
+    animation: hero-p 2s ease-in-out forwards;
+}
+
+.btn-animation {
+    animation: hero-btn 2s ease-in-out forwards;
+}
+
+.hero-image img {
+    animation-name: bouncing-img;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+.timeline-item {
+    animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: Timeline-screen;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 2s; */
+    animation-duration: 5s;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+}
+
+.about-content {
+    animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: right-to-left;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 2s; */
+    animation-duration: 5s;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+}
+
+.about-image {
+    animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: left-to-right;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 2s; */
+    animation-duration: 5s;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+}
+
+.about-heading {
+    animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: up-to-down;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 2s; */
+    animation-duration: 5s;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+}
+
+.section-badge {
+    animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: left-right;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 2s; */
+    animation-duration: 5s;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+}
+
+.section-title {
+    animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: down-to-up;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 2s; */
+    animation-duration: 5s;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+}
+
+/* incoming animations of project part
+
+Image scale
+
+1
+↓
+
+1.05
+
+opacity:0;
+
+↓
+
+opacity:1;
+→
+
+slides
+
+20px
+
+↓
+
+0px
+*/
+/* 
+!!! dont use this that can cause of any problem  because there is already animation has been completed with his parents container !!!
+.contact-heading span{
+     animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: contact-1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-direction: alternate;
+} */
+/* @keyframes contact-1 {
+    from{
+        transform: translateZ(80px);
+        opacity: 0;
+    }
+    to{
+        transform: translateZ(0);
+        opacity: 1;
+    }
+    
+} */
+.contact-heading {
+    animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: contact-1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes contact-1 {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.contact-container {
+    animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: contact-2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes contact-2 {
+    from {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.featured-project {
+    animation: reveal both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+    animation-name: Cards-pr;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes Cards-pr {
+    from {
+        transform: translateY(-10px);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ====== service-emoji-keyframes !!!! ====== */
+.emoji {
+    /* animation: reveal both; */
+    /* animation-timeline: view(); */
+    /* animation-range: entry 30% cover 40%; */
+    animation-name: emoji-rotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+@keyframes emoji-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(20deg);
+    }
+
+    60% {
+        transform: rotate(60deg);
+    }
+
+    100% {
+        transform: rotate(100deg);
+    }
+}
+
+/* ===========================
+   Animated Background
+=========================== */
+
+.bg {
+    position: fixed;
+    inset: 0;
+    z-index: -3;
+
+    background:
+        radial-gradient(circle at top center, #000000 0%, #111827 28%, transparent 65%),
+        radial-gradient(circle at bottom right, #14532d 0%, transparent 45%),
+        radial-gradient(circle at bottom left, #2563EB 0%, transparent 40%),
+        #F8FAFC;
+
+    background-size: 200% 200%;
+    animation: aurora 20s ease-in-out infinite;
+}
+
+.bg2 {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+
+    opacity: .28;
+    filter: blur(120px);
+
+    background:
+        radial-gradient(circle, #22C55E 0%, transparent 55%),
+        radial-gradient(circle, #3B82F6 0%, transparent 55%);
+
+    animation: floatBlob 18s ease-in-out infinite alternate;
+}
+
+.bg3 {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    opacity: .18;
+    filter: blur(160px);
+
+    background:
+        radial-gradient(circle, #7C3AED 0%, transparent 60%);
+
+    animation: floatBlob2 22s ease-in-out infinite alternate;
+}
+
+@keyframes down-to-up {
+    from {
+        transform: translateY(25px) translateX(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes left-right {
+    from {
+        transform: translateX(30px);
+        box-shadow: 0 10px 10px rgb(16, 74, 72);
+        /* scale: 2; */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        box-shadow: 0 10px 20px rgb(7, 14, 25);
+        /* scale: 1; */
+        opacity: 1;
+    }
+}
+
+@keyframes up-to-down {
+    from {
+        transform: translateY(-40px);
+        text-shadow: 0 20px 20px rgb(18, 31, 67);
+        /* scale: 1.2; */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        text-shadow: 0 10px 20px rgb(5, 12, 115);
+        /* scale: 1; */
+        opacity: 1;
+    }
+}
+
+@keyframes right-to-left {
+    from {
+        transform: translateY(-30px) translateX(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes left-to-right {
+    from {
+        transform: translateY(30px) translateX(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes Timeline-screen {
+    from {
+        transform: translateY(-20px) translateX(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bouncing-img {
+    0% {
+        transform: translateY(-10px) translateX(0);
+        box-shadow: 0 10px 10px rgb(7, 5, 5);
+    }
+
+    50% {
+        transform: translateX(0) translateY(10px);
+        box-shadow: 0 10px 15px white;
+        /* opacity: 0; */
+    }
+
+    100% {
+        transform: translateY(-10px);
+        /* opacity: 1; */
+        box-shadow: 0 10px 10px rgb(13, 255, 219);
+    }
+}
+
+@keyframes hero-btn {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes badge-animation {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hero-h1 {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hero-light {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hero-p {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Card Css  */
+
+@keyframes slow-spin {
+    from {
+        transform: rotate(0deg);
+        box-shadow: 10px 10px 10px 10px #0f172a;
+    }
+
+    to {
+        transform: rotate(360deg);
+        box-shadow: 10px 9px 9px 10px #0f172a;
+    }
+
+}
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes aurora {
+
+    0% {
+        background-position:
+            0% 0%,
+            100% 100%,
+            0% 100%;
+    }
+
+    50% {
+        background-position:
+            100% 0%,
+            0% 50%,
+            100% 100%;
+    }
+
+    100% {
+        background-position:
+            0% 0%,
+            100% 100%,
+            0% 100%;
+    }
+
+}
+
+@keyframes floatBlob {
+
+    0% {
+        transform: translate(-80px, -40px) scale(1);
+    }
+
+    100% {
+        transform: translate(120px, 80px) scale(1.25);
+    }
+
+}
+
+@keyframes floatBlob2 {
+
+    0% {
+        transform: translate(120px, -80px) scale(.9);
+    }
+
+    100% {
+        transform: translate(-120px, 120px) scale(1.35);
+    }
+
+}
+
+/* All line is total 2948 */

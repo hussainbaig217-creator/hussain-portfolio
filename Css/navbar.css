@@ -1,0 +1,303 @@
+/* ==========================================================
+                    NAVBAR
+========================================================== */
+
+/* Prevent scrolling when mobile menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+                    NAVBAR CONTAINER
+========================================================== */
+
+.navbar {
+
+    position: sticky;
+    top: 15px;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    background: rgba(11, 18, 32, .72);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.35);
+
+    transition:
+        background .35s ease,
+        border .35s ease,
+        box-shadow .35s ease,
+        top .35s ease;
+
+}
+
+
+/* Navbar after scrolling */
+
+.navbar.scrolled{
+
+    top:10px;
+
+    background:rgba(11,18,32,.88);
+
+    border-color:rgba(255,255,255,.12);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.45);
+
+}
+
+
+/* ==========================================================
+                        LOGO
+========================================================== */
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:.35rem;
+
+    font-family:"Major Mono Display", monospace;
+
+    font-size:1rem;
+    font-weight:600;
+
+    color:var(--text-white);
+
+    user-select:none;
+
+    z-index:1100;
+
+}
+
+.logo span{
+
+    color:var(--primary);
+
+}
+
+
+/* ==========================================================
+                    NAVIGATION LINKS
+========================================================== */
+
+.nav-links{
+
+    display:flex;
+    align-items:center;
+    gap:2rem;
+
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+
+/* Individual Link */
+
+.nav-links a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+    font-weight:500;
+
+    padding:.5rem .2rem;
+
+    transition:all .3s ease;
+
+}
+
+
+/* Hover */
+
+.nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+
+/* Animated Underline */
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    border-radius:999px;
+
+    transition:width .35s ease;
+
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+.nav-links a.active{
+
+    color:var(--primary);
+
+}
+
+
+/* ==========================================================
+                    CONNECT BUTTON
+========================================================== */
+
+.nav-cta .connect-btn{
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    padding:.8rem 1.6rem;
+
+    border-radius:999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--secondary)
+        );
+
+    color:#fff;
+
+    font-weight:600;
+
+    border:none;
+
+    box-shadow:
+        0 10px 30px rgba(6,182,212,.25);
+
+    transition:all .35s ease;
+
+}
+
+.nav-cta .connect-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 18px 40px rgba(6,182,212,.35);
+
+}
+
+
+/* ==========================================================
+                MOBILE MENU BUTTON
+========================================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    width:50px;
+    height:50px;
+
+    background:none;
+    border:none;
+
+    cursor:pointer;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:6px;
+
+    z-index:1100;
+
+}
+
+.menu-toggle span{
+
+    width:28px;
+    height:3px;
+
+    background:var(--text-white);
+
+    border-radius:999px;
+
+    transition:all .35s ease;
+
+}
+
+
+/* ==========================================================
+                HAMBURGER ANIMATION
+========================================================== */
+
+.menu-toggle.active span:nth-child(1){
+
+    transform:
+        translateY(9px)
+        rotate(45deg);
+
+}
+
+.menu-toggle.active span:nth-child(2){
+
+    opacity:0;
+
+    transform:scaleX(0);
+
+}
+
+.menu-toggle.active span:nth-child(3){
+
+    transform:
+        translateY(-9px)
+        rotate(-45deg);
+
+}
+
+
+/* ==========================================================
+                MOBILE ONLY BUTTON
+========================================================== */
+
+.mobile-btn{
+
+    display:none;
+
+}

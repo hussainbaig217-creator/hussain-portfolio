@@ -1,0 +1,267 @@
+/* ==========================================
+                FOOTER BG
+========================================== */
+.footer-section {
+    background: var(--bg-main);
+}
+
+.footer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    margin-bottom: 1rem;
+
+    background: var(--primary-dim);
+    color: var(--primary);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.footer-header {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-header h2 {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer-header p {
+    font-size: clamp(1.5rem, 1.3rem, 1rem);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    font-family: math;
+    margin-top: 0.8rem;
+}
+
+.footer-cta {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    /* line-height: 3; */
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.ft-primary-btn {
+    background: #132849;
+    color: var(--text-light);
+    border-radius: 99px;
+    padding: 10px 16px;
+    border: 1px solid #265aac;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 8px #265aac;
+}
+
+.ft-primary-btn:hover {
+    background-color: #0b121c;
+    transform: translateY(-8px);
+    box-shadow: 0 6px 8px #4e88e6;
+}
+
+.ft-primary-btn:active {
+    background-color: white;
+    color: #0b121c;
+    border: 1px solid #07101f;
+}
+
+.ft-sub-btn {
+    padding: 10px 16px;
+    background: #23519a;
+    color: var(--text-light);
+    border-radius: 99px;
+    border: 1px solid #457bde;
+    box-shadow: 0 6px 8px #2f68c3;
+    transition: all 0.3s ease;
+}
+
+.ft-sub-btn:hover {
+    transform: translateY(-8px);
+    background-color: #132849;
+    color: #4e88e6;
+    box-shadow: 0 6px 8px #2f68c3;
+}
+
+/* ==========================================
+                FOOTER GRID
+========================================== */
+
+.footer-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 3rem;
+
+    max-width: 1200px;
+
+    margin: 4rem auto;
+    background-color: var(--bg-deep);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+.footer-column h3 {
+
+    color: var(--text-white);
+
+    font-size: 1.3rem;
+
+}
+
+.footer-column p {
+
+    color: var(--text-muted);
+
+    line-height: 1.8;
+
+}
+
+.tags {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+.tags a {
+
+    color: var(--text-muted);
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.tags a:hover {
+
+    color: var(--primary);
+
+    transform: translateX(8px);
+
+}
+
+/* ==========================================
+                Media querey footer section
+========================================== */
+@media (max-width:768px) {
+    .footer-column {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-column p {
+        text-align: center;
+    }
+
+    .tags a {
+        text-align: center;
+    }
+}
+
+/* ==========================================
+                SOCIAL LINKS
+========================================== */
+
+.footer-social {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1.2rem;
+
+    margin: 3rem 0;
+
+}
+
+.footer-social a {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: var(--bg-surface);
+
+    border: 1px solid var(--border);
+
+    transition: .3s;
+
+}
+
+.footer-social a:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--primary);
+
+    box-shadow: 0 0 20px var(--primary-glow);
+
+}
+
+.footer-social img {
+
+    width: 32px;
+
+}
+
+/* ==========================================
+                COPYRIGHT
+========================================== */
+
+.footer-bottom {
+
+    border-top: 1px solid var(--border);
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+.footer-bottom p {
+
+    color: var(--text-dim);
+
+    font-size: .95rem;
+
+}

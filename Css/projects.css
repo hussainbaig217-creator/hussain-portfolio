@@ -1,0 +1,374 @@
+/* Tommorow i will see this now and start work from here  date 20 july 2026*/
+
+/*  <!-- -----------------------------------------------
+                Featured Projects
+     Projects I've built while learning.
+
+ ┌──────────────────┐   ┌──────────────────┐
+ │                  │   │                  │
+ │     Image        │   │     Image        │
+ │                  │   │                  │
+ │ AI Website       │   │ Portfolio        │
+ │ Description      │   │ Description      │
+ │                  │   │                  │
+ │ HTML CSS JS      │   │ React Next       │
+ │                  │   │                  │
+ │ GitHub  Live     │   │ GitHub  Live     │
+ └──────────────────┘   └──────────────────┘
+
+
+ ┌──────────────────┐   ┌──────────────────┐
+ │                  │   │                  │
+ └──────────────────┘   └──────────────────┘ 
+       ======================
+ ============= Important===========
+       ======================
+
+ Featured Projects
+↓
+Category Badge
+↓
+Project Title
+↓
+Description
+↓
+Technology Tags
+↓
+Buttons
+ -->
+
+
+ Project Header
+│
+├── Category
+├── Status
+│
+├── Image
+│
+├── Project Name
+├── Project Number
+├── Description
+│
+├── Tags
+│
+├── Buttons
+│
+└── Date
+ 
+ */
+
+
+
+/*<<<<< started from here >>>>>>*/
+.project-section {
+    padding: 2rem;
+    min-height: 100dvh;
+    margin: 0 auto;
+}
+
+.featured-project-header {
+    text-align: center;
+}
+
+.featured-project-header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Space Grotesk';
+    line-height: 1.8;
+    letter-spacing: 1.8px;
+    color: #fdfdfd;
+
+}
+
+.featured-project-header h2 span {
+    background: linear-gradient(90deg, #78a2ff, #06B6D4, #370097);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.featured-project-header p {
+    /* background: azure; */
+    background: #00000099;
+    display: inline-block;
+    border-radius: 99px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-family: monospace;
+    color: #a3c6ff;
+    backdrop-filter: blur(1px);
+    margin-top: 1rem;
+}
+
+.featured-image {
+    width: 100%;
+}
+
+.featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: .4s ease;
+}
+
+.image-overlay {
+
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    transition: .4s;
+}
+
+.image-overlay span {
+
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transform: translateY(20px);
+    transition: all .4s ease-in;
+}
+
+.featured-project {
+    padding: 1rem;
+    /* background-color: #bfae75a4; */
+    background-color: #0B1220;
+    color: #FFFFFF;
+    backdrop-filter: blur(10px);
+    border: 2px solid black;
+    margin: 2rem auto;
+    /* border-radius: 12px; */
+    border-radius: 12px;
+    border-top: 3px solid rgba(255, 255, 255, .12);
+    border-right: 1px solid rgba(255, 255, 255, .12);
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    border-left: 1px solid rgba(255, 255, 255, .12);
+}
+
+.project-image-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-top .project-status {
+    color: #22C55E;
+    background: #144514;
+    padding: 1rem;
+    border-radius: 99px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: -0.2px;
+    border: 1px solid #22C55E;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-top .project-status:hover {
+    transform: translateY(-8px);
+    background: #0a1f0a;
+}
+
+.project-top .project-category {
+    color: #faca51;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: 0.8px;
+    background: #908a1bc9;
+    border-radius: 99px;
+    padding: 1rem;
+    border: 1px solid wheat;
+    transition: all 0.3s ease;
+    /* margin-bottom: 1rem; */
+    cursor: pointer;
+}
+
+.project-top .project-category:hover {
+    transform: translateY(-8px);
+    background: #4f4c14c9;
+}
+
+.featured-project-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 1rem; */
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    line-height: 2;
+    gap: 1rem;
+}
+
+.project-image-link:hover img {
+    transform: scale(1.05);
+}
+
+.project-image-link:hover .image-overlay span {
+    transform: translateY(0);
+}
+
+/* for numberng css design style  
+
+ large
+
+very light
+
+low opacity
+
+absolute positioned
+
+Example
+ 
+ */
+.project-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    /* color: rgba(255, 255, 255, .15); */
+    color: #06B6D4;
+    letter-spacing: 1.2px;
+}
+
+.featured-project-heading h3 {
+    /* color: #faca51; */
+    color: #faca51;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Space Grotesk';
+    line-height: 1.8;
+    letter-spacing: 1.3px;
+}
+
+.featured-project-description {
+    color: #CBD5E1;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 1.1px;
+    margin-bottom: 1rem;
+}
+
+.project-date {
+    color: white;
+    background: #a52a2a99;
+    padding: 0.5rem;
+    border-radius: 99px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: -0.2px;
+    line-height: 1.8;
+    border: 1px solid #ff0000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-date:hover {
+    /* transform:translateY(-8px); */
+    /* transform: translateY(-8px); */
+    background-color: #0f0c0c99;
+}
+
+.featured-tags {
+    color: #3af1ee;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.featured-tags span {
+    background-color: #000000;
+    padding: 0.5rem;
+    border-radius: 99px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: -0.2px;
+    border: 1px solid #3af1ee;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.featured-btn {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2rem;
+}
+
+.featured-btn .Github-btn {
+    /* text-decoration: none; */
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.featured-btn .Github-btn:hover {
+    letter-spacing: 1.1px;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(146, 247, 232) 0px 7px 29px 0px;
+}
+
+.featured-btn .live-btn {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    /* letter-spacing: 1.2px; */
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.featured-btn .live-btn:hover {
+    /* letter-spacing: 1px; */
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(255, 50, 50) 0px 7px 29px 0px;
+}
+
+.featured-tags span:hover {
+    transform: translateY(-8px);
+}
+
+/* All line is total 2948 */
