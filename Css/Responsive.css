@@ -449,38 +449,28 @@
 /* ==================================
           ARCHITECTURE
 ================================== */
-/* === ARCHITECTURE — MOBILE FIXES === */
+/* === MOBILE FIX === */
 @media (max-width: 768px) {
   .Architechure-section {
-    padding: 60px 4% 80px;       /* smaller side padding */
+    padding: 50px 4% 60px;
   }
 
   .Architechure-heading {
-    font-size: clamp(1.6rem, 5vw, 2.5rem); /* scale down safely */
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 30px;
     overflow-wrap: break-word;
   }
 
   .Architechure-container {
-    flex-direction: column;       /* stack on mobile */
-    gap: 2rem;
-  }
-
-  /* These min-widths are the real overflow culprits on small screens */
-  .Architechure-bio {
-    min-width: unset;             /* remove 300px */
-    flex: 1 1 0;
-  }
-
-  .terminal-window {
-    min-width: unset;             /* remove 320px */
-    flex: 1 1 0;
-    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .terminal-body {
-    font-size: 0.85rem;           /* slightly smaller on mobile */
+    padding: 12px;
+    font-size: 0.8rem;
     white-space: pre-wrap;
-    overflow-wrap: break-word;    /* prevent code lines from overflowing */
+    overflow-wrap: break-word;
     word-break: break-word;
   }
 
@@ -489,8 +479,15 @@
     overflow-wrap: break-word;
     word-break: break-word;
   }
-}
 
+  .Architechure-bio h2 {
+    font-size: 1.5rem;
+  }
+
+  .Architechure-bio p {
+    font-size: 1rem;
+  }
+}
 
 /* ==================================
             PROJECTS
