@@ -310,51 +310,101 @@
         font-size: 0.95rem;
     }
 }
-
 /* ==================================
 HERO — MOBILE (760px and below)
 ================================== */
 @media (max-width: 760px) {
   .hero-section {
+    padding: 1.5rem 0.8rem;
     max-width: 100%;
-    padding: 1.5rem 1rem;
   }
 
   .hero-container {
-    flex-direction: column;
+    /* keep side-by-side — your original style */
+    flex-direction: row;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     min-height: auto;
     padding-top: 1rem;
   }
 
+  /* text side — stacked vertically on the left */
   .hero-content {
-    flex: 1 1 0;
-    text-align: center;         /* center text on mobile */
+    flex: 1 1 55%;
+    min-width: 0;
+    gap: 0.6rem;
   }
 
+  /* BIG heading — your style */
   .hero-content h1 {
-    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    font-size: clamp(1.6rem, 7vw, 2.8rem);
+    line-height: 1.15;
   }
 
   .hero-content p {
-    text-align: center;         /* center paragraph on mobile */
-    font-size: 0.95rem;
+    text-align: center;
+    font-size: 0.9rem;
     letter-spacing: 0.8px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: 8px;
   }
 
   .h1-badge {
     margin-left: auto;
     margin-right: auto;
+    font-size: 0.75rem;
+    padding: 4px 8px;
   }
 
   .hero-highlight {
     margin-left: auto;
     margin-right: auto;
+    font-size: 0.6rem;
+    padding: 0.4rem 0.6rem;
   }
 
   .hero-cta {
-    justify-content: center;    /* center buttons on mobile */
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-cta .primary-btn,
+  .hero-cta .sub-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  /* image side — right */
+  .hero-image {
+    flex: 0 1 40%;
+    min-width: 0;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* very small phones */
+@media (max-width: 400px) {
+  .hero-container {
+    gap: 0.6rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.4rem, 7vw, 2rem);
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
     width: 100%;
   }
 
@@ -365,12 +415,7 @@ HERO — MOBILE (760px and below)
   }
 
   .hero-image {
-    flex: 1 1 0;
-    width: 100%;
-  }
-
-  .hero-image img {
-    max-width: 100%;
+    flex: 0 1 35%;
   }
 }
     /* ==================================
