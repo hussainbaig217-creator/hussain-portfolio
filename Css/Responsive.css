@@ -365,31 +365,45 @@
 /* ==================================
           ARCHITECTURE
 ================================== */
-/* Responsive.css — ARCHITECTURE/SKILLS */
+/* === ARCHITECTURE — MOBILE FIXES === */
 @media (max-width: 768px) {
   .Architechure-section {
-    padding: 60px 4% 80px;
+    padding: 60px 4% 80px;       /* smaller side padding */
   }
 
-  .stat-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* lower min */
-    padding: 16px;
-    gap: 1rem;
+  .Architechure-heading {
+    font-size: clamp(1.6rem, 5vw, 2.5rem); /* scale down safely */
+    overflow-wrap: break-word;
   }
 
-  .skills-heading,
-  .dream-heading {
-    padding: 2rem 1rem;
-    font-size: 1.5rem;
+  .Architechure-container {
+    flex-direction: column;       /* stack on mobile */
+    gap: 2rem;
   }
 
-  .dream-products {
-    padding: 16px;
-    gap: 1rem;
+  /* These min-widths are the real overflow culprits on small screens */
+  .Architechure-bio {
+    min-width: unset;             /* remove 300px */
+    flex: 1 1 0;
   }
 
-  .card {
-    flex: 0 1 100%;           /* full width on very small screens */
+  .terminal-window {
+    min-width: unset;             /* remove 320px */
+    flex: 1 1 0;
+    width: 100%;
+  }
+
+  .terminal-body {
+    font-size: 0.85rem;           /* slightly smaller on mobile */
+    white-space: pre-wrap;
+    overflow-wrap: break-word;    /* prevent code lines from overflowing */
+    word-break: break-word;
+  }
+
+  .code-output {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 }
 
