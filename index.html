@@ -946,7 +946,46 @@ Project Header
         </div> <!-- featured project -->
 
     </section>
-    <!-- =========================== CONTACT SECTION =========================== -->
+    <!-- =========================== CONTACT SECTION ===========================
+    DESKTOP (Side-by-Side using space-between) working on it!
+┌───────────────────────────────────────────────────────┐
+│                  CONTACT SECTION                       │
+│                                                       │
+│  ┌─────────────────┐         ┌────────────────────┐  │
+│  │  CONTACT INFO    │         │   CONTACT FORM      │  │
+│  │  (flex: 1)      │         │   (flex: 1.2)      │  │
+│  │                 │         │                    │  │
+│  │  📧 Email       │         │  [Name] [Email]    │  │
+│  │  📍 Location    │         │  [Subject]         │  │
+│  │  🕐 Availability │         │  [Message]         │  │
+│  │                 │         │                    │  │
+│  │  Social Links   │         │  [Send Message →]  │  │
+│  └─────────────────┘         └────────────────────┘  │
+│       ← space-between gap (3rem) →                   │
+└───────────────────────────────────────────────────────┘
+
+
+MOBILE (Stacked vertically using flex-direction: column)
+┌──────────────────────┐
+│   CONTACT SECTION    │
+│                      │
+│  ┌──────────────────┐│
+│  │  CONTACT INFO     ││
+│  │  (width: 100%)   ││
+│  │  📧 📍 🕐        ││
+│  │  Social Links     ││
+│  └──────────────────┘│
+│                      │
+│  ┌──────────────────┐│
+│  │  CONTACT FORM     ││
+│  │  (width: 100%)   ││
+│  │  [Name]          ││
+│  │  [Email]         ││
+│  │  [Subject]       ││
+│  │  [Message]       ││
+│  │  [Send Message]  ││
+│  └──────────────────┘│
+└──────────────────────┘ 
  <section class="contact-section" id="contact">
     <div class="contact-heading">
         <span class="contact-section-badge">📩 Get In Touch</span>
@@ -1028,8 +1067,8 @@ Project Header
                 </button>
             </form>
         </div>
-    </div>  <!-- ✅ THIS WAS MISSING -->
-</section>
+    </div>   ✅ THIS WAS MISSING 
+</section> -->
     <!-- what i want to build
     ────────────────────────────────────
 
