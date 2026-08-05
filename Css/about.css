@@ -24,8 +24,8 @@
 
 ----------------------------------------------------------*/
 .about-section {
-    padding: 2rem;
-   min-height:80vh;
+    padding: 1rem;
+   /* min-height:80vh; */
 }
 
 .about-container {
@@ -82,7 +82,7 @@
 }
 
 .about-subtitle {
-     max-width: 700px;
+     /* max-width: 700px; */
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.8;
