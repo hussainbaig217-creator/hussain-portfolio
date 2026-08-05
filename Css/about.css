@@ -24,8 +24,8 @@
 
 ----------------------------------------------------------*/
 .about-section {
-    padding: 4rem;
-
+    padding: 2rem;
+   min-height:80dvh;
     background: rgba(255, 255, 255, .05);
     backdrop-filter: blur(15px);
     border-top: 1px solid rgba(255, 255, 255, .08);
@@ -38,7 +38,7 @@
     align-items: center;
     margin: 0 auto;
     gap: 2rem;
-    min-height: 80dvh;
+    /* min-height: 80dvh; */
 }
 
 .about-image img {
