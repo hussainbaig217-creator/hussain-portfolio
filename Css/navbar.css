@@ -304,35 +304,13 @@ body.menu-open {
 
 
 /* ==========================================================
-            DARK OVERLAY BEHIND MENU
-========================================================== */
-
-.nav-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(5, 10, 21, 0.85);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    z-index: 998;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.nav-overlay.active {
-    display: block;
-    opacity: 1;
-}
-
-
-/* ==========================================================
-            MOBILE BREAKPOINTS
+        SIRF YEH BLOCK ADD KIYA HAI NEECHE
 ========================================================== */
 
 @media (max-width: 1024px) {
 
     .navbar {
-        position: fixed;
+        position: sticky;
         top: 0;
         left: 0;
         right: 0;
@@ -371,26 +349,21 @@ body.menu-open {
     .nav-links {
         position: fixed;
         top: 0;
-        right: 0;
-        width: 100%;
-        max-width: 300px;
-        height: 100dvh;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
         background: var(--bg-surface);
         border-left: 1px solid var(--border);
-        border-radius: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem;
-        padding: 5rem 2rem 2rem;
-        transform: translateX(100%);
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        gap: 2rem;
+        transition: right 0.4s ease;
         z-index: 999;
-        overflow-y: auto;
     }
 
     .nav-links.active {
-        transform: translateX(0);
+        right: 0;
     }
 
     .nav-links li {
@@ -412,13 +385,11 @@ body.menu-open {
         display: none;
     }
 
-    .nav-links a:hover,
-    .nav-links a:active {
+    .nav-links a:hover {
         background: var(--primary-dim);
         color: var(--primary);
     }
 }
-
 
 @media (max-width: 400px) {
 
@@ -427,19 +398,12 @@ body.menu-open {
     }
 
     .nav-links {
-        max-width: 100%;
-        padding: 5rem 1.5rem 2rem;
-    }
-
-    .nav-links a {
-        font-size: 0.95rem;
-        min-height: 48px;
+        width: 100%;
     }
 
     .menu-toggle {
         width: 44px;
         height: 44px;
-        gap: 5px;
     }
 
     .menu-toggle span {
