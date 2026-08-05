@@ -371,73 +371,52 @@
              ABOUT
 ================================== */
 /* Responsive.css — ABOUT */
-@media (max-width: 768px) {
-  .about-section {
-    padding: 40px 16px 60px;
-  }
-
-  .about-container {
-    flex-direction: column;    /* stack image above/below text */
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .about-image img {
-    max-width: 100%;
-  }
-
-  .about-buttons {
-    flex-direction: column;
-    align-items: stretch;      /* buttons full width */
-  }
-
-  .about-buttons .primary-btn {
-    width: 100%;
-    text-align: center;
-  }
+ @media (max-width:768px) {
+    .about-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
 /* Responsive.css — JOURNEY (update the 760px block) */
-@media (max-width: 760px) {
-  .timeline::before {
-    left: 16px;
-    transform: none;
-    width: 3px;               /* slightly thinner on mobile */
-  }
+ @media (max-width:768px) {
+    
+    .timeline::before {
+        left: 20px;
+        transform: none;
+    }
 
-  .timeline-item {
-    width: 100%;
-    left: 0 !important;
-    padding: 18px 18px 18px 48px; /* less left padding */
-  }
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding: 20px 20px 20px 60px;
+    }
 
-  .timeline-item.left,
-  .timeline-item.right {
-    text-align: left;
-  }
+    .timeline-item.left,
+    .timeline-item.right {
+        text-align: left;
+    }
 
-  .timeline-item .timeline-dot {
-    left: 8px;
-    right: auto;
-  }
+    .timeline-item .timeline-dot {
+        left: 10px;
+        right: auto;
+    }
 
-  .timeline-card h3 {
-    font-size: 1.2rem;
-  }
+    .timeline-card h3 {
+        font-size: 1.3rem;
+    }
 
-  .timeline-card p {
-    font-size: 0.9rem;
-  }
+    .timeline-card p {
+        font-size: .95rem;
+    }
 
-  .timeline-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
+    .timeline-tags {
+        gap: .5rem;
+    }
 
-  .timeline-tags span {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.6rem;
-  }
+    .timeline-tags span {
+        font-size: .75rem;
+        padding: .35rem .7rem;
+    }
 }
 
 /* ==================================
