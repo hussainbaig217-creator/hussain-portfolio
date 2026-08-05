@@ -10,46 +10,6 @@
 /* ==========================================
     TABLET  (≤ 1024px)
 ========================================== */
-/* ==========================================================
-            MOBILE BREAKPOINTS (FIXED VERSION)
-========================================================== */
-
-.nav-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(5, 10, 21, 0.85);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    z-index: 998;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.nav-overlay.active {
-    display: block;
-    opacity: 1;
-}
-
-@media (max-width: 1024px) {
-
-    /* Sticky rakho, fixed nahi, warna hero upar chala jayega */
-    .navbar {
-        position: sticky;
-        top: 0;
-        left: 0;
-        right: 0;
-        border-radius: 0;
-        padding: 1rem 1.5rem;
-    }
-
-    .nav-cta {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
 
     .mobile-btn {
         display: block;
