@@ -25,11 +25,7 @@
 ----------------------------------------------------------*/
 .about-section {
     padding: 2rem;
-   min-height:80dvh;
-    background: rgba(255, 255, 255, .05);
-    backdrop-filter: blur(15px);
-    border-top: 1px solid rgba(255, 255, 255, .08);
-    border-bottom: 1px solid rgba(255, 255, 255, .08);
+   min-height:80vh;
 }
 
 .about-container {
@@ -42,7 +38,7 @@
 }
 
 .about-image img {
-    max-width: 500px;
+    /* max-width: 500px; */
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
