@@ -412,22 +412,142 @@
 /* ==================================
             CONTACT
 ================================== */
-/* ==================================
-        CONTACT SECTION responsiveness
-================================== */
-@media (max-width:700px){
-    .contact-container{
-        flex-direction:column;
-        align-items:center;
+/* ==========================================
+        CONTACT SECTION RESPONSIVENESS
+========================================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .contact-section {
+        padding: 60px 5%;
     }
-    .contact-form-wrapper{
-        width:100%;
+
+    .contact-heading {
+        margin-bottom: 2.5rem;
     }
-    .contact-container{
-        gap:2rem;
+
+    .contact-container {
+        gap: 2rem;
     }
-  .contact-info{
-        width:100%;
+
+    .contact-info,
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .contact-section {
+        padding: 50px 4%;
+    }
+
+    .contact-heading {
+        margin-bottom: 2rem;
+    }
+
+    .contact-heading p {
+        font-size: 0.9rem;
+    }
+
+    /* Stack vertically */
+    .contact-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contact-info,
+    .contact-form-wrapper {
+        flex: unset;
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+    /* Form row: stack Name & Email */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Shrink inputs for small screens */
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .form-group textarea {
+        min-height: 110px;
+    }
+
+    /* Full-width button on mobile */
+    .form-submit {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    /* Tighten gaps inside form */
+    .contact-form {
+        gap: 0.9rem;
+    }
+
+    /* Compact info cards */
+    .info-card {
+        padding: 0.8rem 1rem;
+        gap: 0.75rem;
+    }
+
+    .info-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+
+    /* Disable card slide on touch devices */
+    .info-card:hover {
+        transform: none;
+    }
+
+    /* Center social icons */
+    .social-icon {
+        justify-content: center;
+    }
+
+    /* Smaller social links */
+    .social-link {
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-link img {
+        width: 28px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 400px) {
+    .contact-section {
+        padding: 40px 3%;
+    }
+
+    .contact-info,
+    .contact-form-wrapper {
+        padding: 1rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 9px 10px;
+        font-size: 0.85rem;
+    }
+
+    .form-submit {
+        font-size: 0.9rem;
+        padding: 11px 16px;
     }
 }
 
