@@ -153,6 +153,24 @@ slides
     }
     
 } */
+/* Optional: smooth reveal animation */
+.terminal-window {
+  animation: terminalIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.Architechure-bio {
+  animation: fadeSlideIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+@keyframes terminalIn {
+  0%   { opacity: 0; transform: translateY(16px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fadeSlideIn {
+  0%   { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
 .contact-heading {
     animation: reveal both;
     animation-timeline: view();
