@@ -944,24 +944,23 @@ Project Header
                 </div><!-- Featured-content-closing-tag -->
             </div><!-- Project-body-closing-tag -->
         </div> <!-- featured project -->
-
-    </section>
+</section> <!-- closing featured tag -->
     <!-- =========================== CONTACT SECTION ===========================
-    DESKTOP (Side-by-Side using space-between) working on it!
+    DESKTOP (Side-by-Side using space-between) working on it has been done!
 ┌───────────────────────────────────────────────────────┐
-│                  CONTACT SECTION                       │
+│                  CONTACT SECTION                      │
 │                                                       │
-│  ┌─────────────────┐         ┌────────────────────┐  │
-│  │  CONTACT INFO    │         │   CONTACT FORM      │  │
-│  │  (flex: 1)      │         │   (flex: 1.2)      │  │
-│  │                 │         │                    │  │
-│  │  📧 Email       │         │  [Name] [Email]    │  │
-│  │  📍 Location    │         │  [Subject]         │  │
-│  │  🕐 Availability │         │  [Message]         │  │
-│  │                 │         │                    │  │
-│  │  Social Links   │         │  [Send Message →]  │  │
-│  └─────────────────┘         └────────────────────┘  │
-│       ← space-between gap (3rem) →                   │
+│  ┌─────────────────┐         ┌────────────────────┐   │ 
+│  │  CONTACT INFO    │         │   CONTACT FORM    │   │
+│  │  (flex: 1)      │         │   (flex: 1.2)      │   │
+│  │                 │         │                    │   │
+│  │  📧 Email       │         │  [Name] [Email]    │   │
+│  │  📍 Location    │         │  [Subject]          │   │
+│  │  🕐 Availability │         │  [Message]        │   │
+│  │                 │         │                    │   │
+│  │  Social Links   │         │  [Send Message →]  │   │
+│  └─────────────────┘         └────────────────────┘   │
+│       ← space-between gap (3rem) →                    │
 └───────────────────────────────────────────────────────┘
 
 
@@ -985,90 +984,114 @@ MOBILE (Stacked vertically using flex-direction: column)
 │  │  [Message]       ││
 │  │  [Send Message]  ││
 │  └──────────────────┘│
-└──────────────────────┘ 
- <section class="contact-section" id="contact">
-    <div class="contact-heading">
-        <span class="contact-section-badge">📩 Get In Touch</span>
-        <h3>Let's Connect</h3>
-        <p>Have a project in mind or just want to say hello? Drop me a message and I'll get back to you.</p>
-    </div>
-    
-    <div class="contact-container">
-        <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p>Feel free to reach out...</p>
-            
-            <div class="info-cards">
-                <div class="info-card">
-                    <div class="info-icon">📧</div>
-                    <div class="info-text">
-                        <span class="info-label">Email</span>
-                        <span class="info-value">hussain@example.com</span>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">📍</div>
-                    <div class="info-text">
-                        <span class="info-label">Location</span>
-                        <span class="info-value">Defence Fort</span>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">🕐</div>
-                    <div class="info-text">
-                        <span class="info-label">Availability</span>
-                        <span class="info-value">10/7</span>
-                    </div>
-                </div>
-            </div>
+└──────────────────────┘ -->
+    <!-- =========================== CONTACT SECTION =========================== -->
+    <section class="contact-section" id="contact">
+        <div class="contact-heading">
 
-            <div class="social-links">
-                <span class="social-label">Find me on:</span>
-                <div class="social-icon">
-                    <a href="https://github.com/hussainbaig217-creator" class="social-link" target="_blank">
-                        <img src="/logo-pngs/github.png" alt="GitHub">
-                    </a>
-                    <a href="https://www.instagram.com/spyxhussain/" class="social-link" target="_blank">
-                        <img src="/logo-pngs/instagram.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.linkedin.com/in/subhan-157595396/" class="social-link" target="_blank">
-                        <img src="/logo-pngs/linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://www.youtube.com/@YouEdits4" class="social-link" target="_blank">
-                        <img src="/logo-pngs/youtube.png" alt="YouTube">
-                    </a>
+            <span class="contact-section-badge">📩 Get In Touch</span>
+            <h3>Let's Connect</h3>
+            <p>Have a project in mind or just want to say hello? Drop me a message and I'll get back to you.</p>
+
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <!-- MISSING: This heading -->
+                <h3>Contact Information</h3>
+
+                <!-- MISSING: This paragraph -->
+                <p>Feel free to reach out...</p>
+
+                <!-- MISSING: Wrapper for cards -->
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            📧
+                        </div>
+                        <div class="info-text">
+                            <span class="info-label">
+                                Email
+                            </span>
+                            <span class="info-value">
+                                hussain@example.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div class="info-text">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Defence Fort</span>
+                        </div>
+
+
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+
+                        <div class="info-text">
+                            <span class="info-label">Availability</span>
+                            <span class="info-value">10/7</span>
+                        </div>
+
+                    </div>
                 </div>
+
+                <!-- MISSING: Social label -->
+                <div class="social-links">
+                    <span class="social-label">Find me on:</span>
+                    <div class="social-icon">
+
+                        <a href="https://github.com/hussainbaig217-creator" class="social-link" target="_blank">
+                            <img src="github.png" alt="this is an logo image for github">
+                        </a>
+
+                        <a href="https://www.instagram.com/spyxhussain/" class="social-link" target="_blank">
+                            <img src="instagram.png" alt="this is an logo image for instagram">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/subhan-157595396/" class="social-link" target="_blank">
+                            <img src="linkedin.png" alt="this is an image for using to the links">
+                        </a>
+
+                        <a href="https://www.youtube.com/@YouEdits4" class="social-link" target="_blank">
+                            <img src="youtube.png" alt="this is an image for using to the links">
+                        </a>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
+            <div class="contact-form-wrapper">
+                <form action="https://formspree.io/f/mdaqrpzb" method="post" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" id="name" placeholder="hussain baig" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email" placeholder="hussain@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Project Collaboration">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="6"
+                            placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <span>send Message</span>
+                        <span class="submit-arrow">&#x2192;</span>
+                    </button>
+                </form><!-- =========================== CONTACT FORM closing tag =========================== -->
+            </div><!-- =========================== CONTACT FORM closing tag =========================== -->
+        </div> <!-- =========================== CONTACT container closing tag =========================== -->
         
-        <div class="contact-form-wrapper">
-            <form action="https://formspree.io/f/mdaqrpzb" method="post" class="contact-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" name="name" id="name" placeholder="hussain baig" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" name="email" id="email" placeholder="hussain@example.com" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" placeholder="Project Collaboration">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="6" placeholder="Tell me about your project..."></textarea>
-                </div>
-                <button type="submit" class="form-submit">
-                    <span>send Message</span>
-                    <span class="submit-arrow">&#x2192;</span>
-                </button>
-            </form>
-        </div>
-    </div>   ✅ THIS WAS MISSING 
-</section> -->
+    </section> <!-- =========================== CONTACT SECTION closing tag =========================== -->
     <!-- what i want to build
     ────────────────────────────────────
 
