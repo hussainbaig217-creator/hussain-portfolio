@@ -64,15 +64,18 @@
     /* ------------------------------------------
         NAVBAR BAR — flush to top, full width
     ------------------------------------------ */
-    .navbar {
-        position: sticky;
-        top: 0;
-        border-radius: 0;
-        width: 100%;
-        left: 0;
-        right: 0;
-        padding: 16px 20px;
-    }
+  
+  .navbar {
+    position: sticky;
+    top: 0;            /* change from 15px to 0 */
+    border-radius: 0;  /* full bleed */
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 16px 20px; /* keep horizontal padding comfortable */
+  }
+  /* Optional: if you already have .navbar.scrolled inside this media query, keep it as-is */
+
 
     .navbar.scrolled {
         top: 0;
@@ -270,27 +273,10 @@
              HERO
 ================================== */
 
-@media (max-width:768px) {
-    .hero-h1
-    .hero-container{
-        /* flex-direction: column; */
-        align-items: center;
-    }
-    .hero-content h1{
-        text-align:left;
-
-    }
-}
     /* ==================================
              ABOUT
 ================================== */
 
- @media (max-width:768px) {
-    .about-container {
-        flex-direction: column;
-        gap: 3rem;
-    }
-}
     /* ==================================
             JOURNEY
 ================================== */
@@ -358,9 +344,33 @@
     .terminal-window {
         width: 100%;
     }
-
+  .Architechure-section {
+    padding: 2rem 16px; /* keep vertical padding, tighten horizontal */
+    max-width: 100%;
+    width: 100%;
+  }
+}
+/* HERO — prevent right gap and center content */
+@media (max-width: 768px) {
+  .hero-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .hero-container h1{
+    text-align:left;
 }
 
+/* ABOUT — same idea */
+@media (max-width: 768px) {
+  .about-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 /* ==================================
             PROJECTS
 ================================== */
