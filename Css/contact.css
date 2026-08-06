@@ -21,16 +21,12 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-
     padding: 0.6rem 1.2rem;
     margin-bottom: 1rem;
-
     background: var(--primary-dim);
     color: var(--primary);
-
     border: 1px solid var(--border);
     border-radius: var(--radius-full);
-
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -56,13 +52,12 @@
 ========================================== */
 
 .contact-container {
- display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     max-width: 1100px;
     gap: 3rem;
     margin: 0 auto;
-    align-items: center;
     width: 100%;
 }
 
@@ -71,38 +66,24 @@
 ========================================== */
 
 .contact-info {
-
     background: var(--bg-surface);
-
     border: 1px solid var(--border);
-
     border-radius: var(--radius);
-
     padding: 2rem;
-    width:50%;
-
+    flex: 1;
 }
 
 .contact-info h3 {
-
     font-size: 1.5rem;
-
     color: var(--text-white);
-
-    margin-bottom: .8rem;
-
+    margin-bottom: 0.8rem;
     font-family: "Space Grotesk", sans-serif;
-
 }
 
-.contact-info>p {
-
+.contact-info > p {
     color: var(--text-muted);
-
     line-height: 1.8;
-
     margin-bottom: 2rem;
-
 }
 
 /* ==========================================
@@ -133,13 +114,10 @@
 .social-link {
     display: flex;
     align-items: center;
-    justify-content: left;
-
+    justify-content: center;
     width: 50px;
     height: 50px;
-
     border-radius: 50%;
-
     transition: all 0.3s ease;
 }
 
@@ -158,87 +136,55 @@
 ========================================== */
 
 .info-cards {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 1rem;
-
     margin-bottom: 2rem;
-
 }
 
 .info-card {
-
     display: flex;
-
     align-items: center;
-
     gap: 1rem;
-
     padding: 1rem 1.2rem;
-
     background: var(--bg-deep);
-
     border: 1px solid var(--border);
-
     border-radius: var(--radius);
-
-    transition: .3s;
-
+    transition: 0.3s ease;
 }
 
 .info-card:hover {
-
     transform: translateX(6px);
-
     border-color: var(--primary);
-
 }
 
 .info-icon {
-
     width: 50px;
-
     height: 50px;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     border-radius: var(--radius);
-
     background: var(--primary-dim);
-
+    flex-shrink: 0;
 }
 
 .info-text {
-
     display: flex;
-
     flex-direction: column;
-
+    min-width: 0;
 }
 
 .info-label {
-
     color: var(--text-dim);
-
-    font-size: .8rem;
-
+    font-size: 0.8rem;
     text-transform: uppercase;
-
 }
 
 .info-value {
-
     color: var(--text-light);
-
     font-weight: 500;
-
+    word-break: break-word;
 }
 
 /* ==========================================
@@ -249,7 +195,7 @@
     background: var(--bg-surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    width:50%;
+    flex: 1.2;
     padding: 2rem;
 }
 
@@ -258,7 +204,6 @@
     flex-direction: column;
     gap: 1.2rem;
 }
-
 
 /* ==========================================
               FORM ROW
@@ -269,7 +214,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
 }
-
 
 /* ==========================================
              FORM GROUP
@@ -287,7 +231,6 @@
     font-weight: 500;
 }
 
-
 /* ==========================================
           INPUTS & TEXTAREA
 ========================================== */
@@ -302,6 +245,8 @@
     font-family: "Poppins", sans-serif;
     font-size: 0.95rem;
     outline: none;
+    width: 100%;
+    box-sizing: border-box;
     transition: all 0.3s ease;
 }
 
@@ -321,7 +266,6 @@
     min-height: 140px;
 }
 
-
 /* ==========================================
             SUBMIT BUTTON
 ========================================== */
@@ -331,24 +275,17 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-
     padding: 14px 28px;
-
     background: var(--primary);
     color: var(--bg-deep);
-
     border: 1px solid var(--primary);
     border-radius: var(--radius);
-
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 600;
-
     cursor: pointer;
-
     align-self: flex-start;
     margin-top: 0.5rem;
-
     transition: all 0.3s ease;
 }
 
@@ -366,20 +303,4 @@
 
 .form-submit:hover .submit-arrow {
     transform: translateX(4px);
-}
-
-.contact-info {
-    background-color: var(--bg-surface);
-}
-
-.form-row {
-    grid-template-columns: 1fr;
-}
-
-.form-submit {
-    width: 100%;
-}
-
-.social-icon {
-    justify-content: center;
 }
