@@ -1,148 +1,145 @@
-/* Architechure section designing  */
-
+/* Architecture section designing */
 .Architechure-section {
-    padding: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .Architechure-heading {
-    font-size: clamp(1.5rem, 2.5rem, 3rem);
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 800;
+  font-size: clamp(1.5rem, 2.5rem, 3rem);
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 800;
+  color: var(--text-white);
 }
 
 .Architechure-heading span {
-    color: #cbb4d4;
+  color: var(--secondary);
 }
 
 .Architechure-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 .Architechure-bio {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .Architechure-bio h2 {
-    font-size: clamp(1.5rem, 2rem, 2.5rem);
-    margin-bottom: 20px;
-    /* color: #612d75; */
-    color: #cbb4d4;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  margin-bottom: 20px;
+  color: var(--secondary);
 }
 
 .Architechure-bio p {
-    font-size: clamp(1rem, 2rem, 1.25rem);
-    line-height: 1.6;
-    color: #eec2ff;
-    margin-bottom: 15px;
-    opacity: 1.85;
-    font-weight: 500;
+  font-size: clamp(1rem, 2rem, 1.25rem);
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 
-/* The Terminal Window Ui Box */
+/* The Terminal Window UI Box */
 .terminal-window {
-    flex: 1;
-    /* flex-basis: auto; */
-    min-width: 300px;
-    /* width: 50%; */
-    background: #110018;
-    border-radius: 12px;
-    border: 1px solid rgba(203, 180, 212, 0.2);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+  flex: 1;
+  min-width: 300px;
+  background: var(--bg-surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-mid);
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .terminal-header {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 12px;
-    display: flex;
-    align-items: center;
-    position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .dot {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    margin-right: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
 }
 
 .red {
-    background: #ff5f56;
+  background: var(--error);
 }
 
 .yellow {
-    background: #ffbd2e;
+  background: var(--warning);
 }
 
 .green {
-    background: #27c93f;
+  background: var(--success);
 }
 
 .terminal-title {
-    color: rgba(255, 255, 255, 0.4);
-    font-family: monospace;
-    font-size: 0.85rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  color: var(--text-dim);
+  font-family: monospace;
+  font-size: 0.85rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .terminal-body {
-    padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.95rem;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
 }
 
 .command {
-    color: #cbb4d4;
-    margin-bottom: 15px;
+  color: var(--primary);
+  margin-bottom: 15px;
 }
 
 .code-output {
-    color: #ffffff;
-    white-space: pre-wrap;
+  color: var(--text-white);
+  white-space: pre-wrap;
 }
 
 /* Syntax Highlighting colors */
 .key {
-    color: #f7df1e;
+  color: var(--accent); /* Yellow keys */
 }
 
-/* Yellow keys */
 .val {
-    color: #00d4ff;
+  color: var(--primary); /* Cyan values */
 }
-
-/* Cyber cyan values */
 
 .projects-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 
 .projects-btn a {
-    background-color: #000000c8;
-    backdrop-filter: blur(10px);
-    padding: 12px 14px;
-    text-decoration: none;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 8px 8px white;
-    transition: all 0.3s ease;
-    font-family: monospace;
-    font-size: 1.1rem;
+  background-color: var(--glass);
+  backdrop-filter: blur(10px);
+  padding: 12px 24px;
+  text-decoration: none;
+  color: var(--text-white);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-bright);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  font-family: monospace;
+  font-size: 1.1rem;
 }
 
 .projects-btn a:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 12px white;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7), 0 0 12px var(--primary-glow);
+  border-color: var(--primary);
+  color: var(--primary);
 }
