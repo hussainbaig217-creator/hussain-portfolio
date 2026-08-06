@@ -48,7 +48,7 @@
 /* The Terminal Window Ui Box */
 .terminal-window {
   flex: 1;
-max-witdth:0;   /* DELETE THIS LINE */
+/*max-witdth:0;    DELETE THIS LINE */
   background: #110018;
   border-radius: 12px;
   border: 1px solid rgba(203, 180, 212, 0.2);
@@ -87,9 +87,10 @@ max-witdth:0;   /* DELETE THIS LINE */
     color: rgba(255, 255, 255, 0.4);
     font-family: monospace;
     font-size: 0.85rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align:left;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
 }
 
 .terminal-body {
