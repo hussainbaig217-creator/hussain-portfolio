@@ -350,7 +350,16 @@
           ARCHITECTURE
 ================================== */
 
+@media (max-width:768px) {
+    .Architechure-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .terminal-window {
+        width: 100%;
+    }
 
+}
 
 /* ==================================
             PROJECTS
